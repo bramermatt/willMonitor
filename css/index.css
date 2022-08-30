@@ -28,6 +28,10 @@ body {
     padding-bottom: 30px;
     text-rendering: optimizeLegibility;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+    /* font-family: sans-serif; */
+
+
     cursor: default;
     max-width: 1200px;
  }
@@ -153,38 +157,69 @@ body {
 
 
 .page {
-    max-width: 700px;
+    max-width: 670px;
     margin: auto;
     padding-top: 20px;
 }
 
 .page h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    /* margin-bottom: 50px; */
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
+    font-weight: lighter;
 }
 
 .page p {
     padding: 0px 25px;
     text-indent: 20px;
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.5em;
+    /* word-wrap: break-word; */
+    text-align: auto;
+    letter-spacing: .055em;
+}
+
+.page blockquote {
+    text-align: justify;
+    color: grey;
+}
+
+.page a {
+    padding: 10px;
+    text-indent: 20px;
+    font-size: 1rem;
+    /* line-height: 1.5; */
     /* word-wrap: break-word; */
     line-break: auto;
     text-align: auto;
     letter-spacing: .025em;
 }
 
+.page a:link, .page a:visited {
+    color: var(--text);
+    /* text-decoration: none; */
+}
+
+.page a:hover, .page a:hover {
+    color: var(--text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .next {
     margin-top: 55px;
     max-width: max-content;
-    height: max-content;
     margin-left: auto;
     margin-right: auto;
+
     padding: 10px 10px;
     border-top: 1px solid #eee;
+    bottom: 0;
+    /* min-height: 100vh; */
+
+
     /* min-width: 400px; */
     /* 
     border-style: solid;
@@ -228,7 +263,6 @@ body {
     background-color: #eee;
     color: #000;
     filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
-    font-
   }
 
 
