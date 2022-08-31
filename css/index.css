@@ -67,7 +67,7 @@ body {
 
 
  .intro {
-    padding: 40px 15px;
+    padding: 20px 15px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -157,7 +157,7 @@ body {
 
 
 .page {
-    max-width: 670px;
+    max-width: 640px;
     margin: auto;
     padding-top: 20px;
 }
@@ -177,13 +177,17 @@ body {
     font-size: 1.2rem;
     line-height: 1.5em;
     /* word-wrap: break-word; */
-    text-align: auto;
+    text-align: justify;
     letter-spacing: .055em;
 }
 
 .page blockquote {
     text-align: justify;
     color: grey;
+
+    /* comment out display:none to show notes */
+    display: none;
+
 }
 
 .page a {
@@ -250,20 +254,20 @@ body {
     text-decoration: none;
 }
 
-.next button {
+/* .next button {
     background-color: var(--background);
     transition-duration: 0.4s;
     border-radius: 10px;
     padding: 5px;
     border-style: hidden;
-    /* /* color: var(--background); */
+    color: var(--text);
 }
 
 .next button:hover {
     background-color: #eee;
     color: #000;
     filter: drop-shadow(0 0 1.5px rgb(0, 0, 0));
-  }
+  } */
 
 
 footer {
