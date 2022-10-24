@@ -27,13 +27,18 @@ body {
     padding: auto;
     padding-bottom: 30px;
     text-rendering: optimizeLegibility;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; */
 
     /* font-family: sans-serif; */
 
 
     cursor: default;
     max-width: 1200px;
+
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 18px;
+    line-height: 32px;
+    word-spacing: normal;
  }
 
  .navbar {
@@ -174,11 +179,11 @@ body {
 .page p {
     padding: 0px 25px;
     text-indent: 20px;
-    font-size: 1.2rem;
-    line-height: 1.5em;
+    /* font-size: 1.2rem;
+    line-height: 1.5em; */
     /* word-wrap: break-word; */
     text-align: justify;
-    letter-spacing: .055em;
+    /* letter-spacing: .055em; */
 }
 
 .page blockquote {
