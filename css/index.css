@@ -33,7 +33,7 @@ body {
 
 
     cursor: default;
-    max-width: 1200px;
+    /* max-width: 1400px; */
 
     font-family: 'Libre Caslon Text', serif;
     font-size: 18px;
@@ -160,9 +160,96 @@ body {
     max-height: max-content;
 }
 
+.sidebar {
+    width: 20%;
+    float: left;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    border-right: thin solid grey;
+    margin-top: 15px;
+}
+
+.right-sidebar {
+    width: 20%;
+    float: right;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: thin solid grey;
+    margin-top: 15px;
+}
+
+.right-sidebar p, a {
+    line-height: 22px;
+    margin: 0;
+    padding-bottom: 25px;
+    color: grey;
+}
+
+.sidebar h1, .right-sidebar h1 {
+    font-size: 20px;
+    margin: 0;
+    /* padding-bottom: 15px; */
+}
+
+.sidebar p {
+    margin: 0;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: var(--text);
+    cursor: pointer;
+    /* height: 4vh; */
+    overflow-y: hidden;
+    padding: 10px;
+    padding-bottom: 15px;
+    /* border-radius: 10px; */
+    border-radius: 20px;
+    font-size: 30px;
+    filter: drop-shadow(0 0 1px rgb(0, 0, 0));
+    opacity: 20%;
+  }
+
+@media screen and (prefers-color-scheme: dark) {
+
+      #myBtn:hover {
+        color: rgb(255, 255, 255); 
+        opacity: 80%;
+      }
+
+}
+
+@media screen and (prefers-color-scheme: light) {
+
+    #myBtn:hover {
+        color: rgb(0, 0, 0); 
+        opacity: 80%;
+      }
+}
+
+@media screen and (max-width: 1060px) {
+    .sidebar, .right-sidebar {
+        display: none;
+    }
+}
 
 .page {
-    max-width: 640px;
+    max-width: 600px;
     margin: auto;
     padding-top: 20px;
 }
@@ -187,9 +274,10 @@ body {
 }
 
 .page blockquote {
-    text-align: justify;
+    /* text-align: justify; */
     color: grey;
-
+    border: thin solid;
+    padding: 10px;
     /* comment out display:none to show notes */
     display: none;
 
@@ -201,9 +289,9 @@ body {
     font-size: 1rem;
     /* line-height: 1.5; */
     /* word-wrap: break-word; */
-    line-break: auto;
-    text-align: auto;
-    letter-spacing: .025em;
+    /* line-break: auto; */
+    /* text-align: auto; */
+    /* letter-spacing: .025em; */
 }
 
 .page a:link, .page a:visited {
@@ -213,7 +301,7 @@ body {
 
 .page a:hover, .page a:hover {
     color: var(--text);
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: none;
 }
 
